@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jupyter-nbconvert --to slides slides.ipynb --reveal-prefix=reveal.js  --SlidesExporter.reveal_theme=sky --SlidesExporter.reveal_scroll=True
+jupyter-nbconvert --to slides slides.ipynb --reveal-prefix=reveal.js  --SlidesExporter.reveal_theme sky --SlidesExporter.reveal_scroll True
 mv slides.slides.html  index.html
 mkdir -p /tmp/workspace
 cp -r * /tmp/workspace/
