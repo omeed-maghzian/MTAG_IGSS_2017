@@ -13523,7 +13523,7 @@ MTAG complete. Time elapsed: 3.93074512482s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Filtering:-maintain-homogenous-$\Omega$-assumption">Filtering: maintain homogenous $\Omega$ assumption<a class="anchor-link" href="#Filtering:-maintain-homogenous-$\Omega$-assumption">&#182;</a></h3>
+<h3 id="Filtering:-maintain--$\Omega$,-$\Sigma_j$-assumptions">Filtering: maintain  $\Omega$, $\Sigma_j$ assumptions<a class="anchor-link" href="#Filtering:-maintain--$\Omega$,-$\Sigma_j$-assumptions">&#182;</a></h3>
 </div>
 </div>
 </div></section><section>
@@ -15221,8 +15221,7 @@ MTAG complete. Time elapsed: 3.0m:6.61157798767s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Output-for-when-the-option-is-relevant">Output for when the option is relevant<a class="anchor-link" href="#Output-for-when-the-option-is-relevant">&#182;</a></h3><p><img src="figs/maxFDR_time_screenshot.jpg"></p>
-
+<h3 id="Output-for-when-the-option-is-relevant">Output for when the option is relevant<a class="anchor-link" href="#Output-for-when-the-option-is-relevant">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
@@ -15231,6 +15230,51 @@ MTAG complete. Time elapsed: 3.0m:6.61157798767s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>2017/09/28/05:21:04 PM Calculating FDR by setting number of intervals to 10, and True use of approximation.
+2017/09/28/05:21:04 PM T=2
+2017/09/28/05:21:04 PM Number of gridpoints to search: 92
+2017/09/28/05:21:04 PM Performing grid search using 20 cores.
+2017/09/28/05:21:05 PM Grid search: 10.0 percent finished for . Time:     0.006 min
+2017/09/28/05:21:05 PM Grid search: 20.0 percent finished for . Time:     0.011 min
+2017/09/28/05:21:06 PM Grid search: 30.0 percent finished for . Time:     0.016 min
+2017/09/28/05:21:06 PM Grid search: 40.0 percent finished for . Time:     0.022 min
+2017/09/28/05:21:06 PM Grid search: 50.0 percent finished for . Time:     0.027 min
+2017/09/28/05:21:06 PM Grid search: 60.0 percent finished for . Time:     0.032 min
+2017/09/28/05:21:07 PM Grid search: 70.0 percent finished for . Time:     0.037 min
+2017/09/28/05:21:07 PM Grid search: 80.0 percent finished for . Time:     0.043 min
+2017/09/28/05:21:07 PM Grid search: 90.0 percent finished for . Time:     0.048 min
+2017/09/28/05:21:08 PM Grid search: 100.0 percent finished for . Time:     0.054 min
+2017/09/28/05:21:08 PM Saved calculations of fdr over grid points in /var/genetics/ukb/huili/mtag/output/main/fdr_calculation/interval_10_True_meanapprox_fdr_mat.txt
+2017/09/28/05:21:08 PM &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+2017/09/28/05:21:08 PM grid point indices for max FDR for each trait: [90  3]
+2017/09/28/05:21:08 PM Maximum FDR
+2017/09/28/05:21:08 PM Max FDR of Trait 1: 0.104708870765 at probs = [ 0.8  0.1  0.   0.1]
+2017/09/28/05:21:08 PM Max FDR of Trait 2: 0.000149109160478 at probs = [ 0.   0.   0.3  0.7]
+2017/09/28/05:21:08 PM &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+2017/09/28/05:21:08 PM Completed FDR calculations.
+2017/09/28/05:21:08 PM Calculating FDR by setting number of intervals to 10, and False use of approximation.
+2017/09/28/05:21:08 PM T=2
+2017/09/28/05:21:08 PM Number of gridpoints to search: 92
+2017/09/28/05:21:08 PM Performing grid search using 20 cores.
+2017/09/28/05:22:30 PM Grid search: 10.0 percent finished for . Time:     1.371 min
+2017/09/28/05:23:52 PM Grid search: 20.0 percent finished for . Time:     2.743 min
+2017/09/28/05:25:15 PM Grid search: 30.0 percent finished for . Time:     4.112 min
+2017/09/28/05:26:37 PM Grid search: 40.0 percent finished for . Time:     5.480 min
+2017/09/28/05:27:59 PM Grid search: 50.0 percent finished for . Time:     6.858 min
+2017/09/28/05:29:22 PM Grid search: 60.0 percent finished for . Time:     8.230 min
+2017/09/28/05:30:44 PM Grid search: 70.0 percent finished for . Time:     9.599 min
+2017/09/28/05:32:07 PM Grid search: 80.0 percent finished for . Time:     10.978 min
+2017/09/28/05:33:29 PM Grid search: 90.0 percent finished for . Time:     12.350 min
+2017/09/28/05:34:52 PM Grid search: 100.0 percent finished for . Time:     13.728 min
+2017/09/28/05:34:52 PM Saved calculations of fdr over grid points in /var/genetics/ukb/huili/mtag/output/main/fdr_calculation/interval_10_False_meanapprox_fdr_mat.txt
+2017/09/28/05:34:52 PM &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+2017/09/28/05:34:52 PM grid point indices for max FDR for each trait: [90  3]
+2017/09/28/05:34:52 PM Maximum FDR
+2017/09/28/05:34:52 PM Max FDR of Trait 1: 0.104764850463 at probs = [ 0.8  0.1  0.   0.1]
+2017/09/28/05:34:52 PM Max FDR of Trait 2: 0.000149016665847 at probs = [ 0.   0.   0.3  0.7]
+2017/09/28/05:34:52 PM &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+2017/09/28/05:34:52 PM Completed FDR calculations.</code></pre>
 
 </div>
 </div>
