@@ -12053,7 +12053,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="A-quick-primer-on-LinuxPP">A quick primer on LinuxPP<a class="anchor-link" href="#A-quick-primer-on-LinuxPP">&#182;</a></h2><p>We will only go over the minimum detail needed to follow along in the workshop. There are many good resources for working with Unix available online.</p>
+<h2 id="A-quick-primer-on-Linux">A quick primer on Linux<a class="anchor-link" href="#A-quick-primer-on-Linux">&#182;</a></h2><p>We will only go over the minimum detail needed to follow along in the workshop. There are many good resources for working with Unix available online.</p>
 
 </div>
 </div>
@@ -12501,7 +12501,7 @@ Miscellaneous:
 
 </div>
 </div>
-</div></div></section><section>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12511,7 +12511,7 @@ Miscellaneous:
 
 </div>
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12570,10 +12570,10 @@ rs1533059	8	8684953	A	G	0.4478	-7.07412856424	1.504e-12	62500.0
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail ../data/1_OA2016_hm3samp_NEUR.txt
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -5 ../data/1_OA2016_hm3samp_NEUR.txt
 </pre></div>
 
 </div>
@@ -12586,12 +12586,7 @@ rs1533059	8	8684953	A	G	0.4478	-7.07412856424	1.504e-12	62500.0
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>rs12409562	1	64550053	A	G	0.6306	0.0	1.0	62500.0
-rs1521776	8	106041827	A	G	0.5653	0.0	1.0	111111.111111
-rs1572480	13	89473059	A	C	0.3993	0.0	1.0	111111.111111
-rs1618875	12	115744381	T	C	0.444	0.0	1.0	111111.111111
-rs1638201	7	7315250	A	G	0.04851	0.0	1.0	15625.0
-rs165119	18	75317995	T	C	0.1101	0.0	1.0	27777.7777778
+<pre>rs165119	18	75317995	T	C	0.1101	0.0	1.0	27777.7777778
 rs1916337	3	165252023	T	C	0.2444	0.0	1.0	62500.0
 rs4878187	9	38227021	T	C	0.8713	0.0	1.0	40000.0
 rs8080313	17	35952983	A	G	0.8396	0.0	1.0	40000.0
@@ -12657,49 +12652,12 @@ rs842938	2	201404694	T	C	0.459	0.648595291061	0.5166	111111.111111
 <li>Only keeps SNPs with sample size $N \geq \frac{2}{3} F^{-1}_N(90)$ (greater than two-thirds of the 90th percentile)</li>
 </ul>
 </li>
+<li>Merge the filtered GWAS summary statistics results together, taking the intersection of available SNPs (accounting for lists of SNPs to <code>include</code> and/or <code>exclude</code>).</li>
+<li>Estimate the residual covariance matrix, $\Sigma_{LD}$, using the intercept of LD Score regression (<code>ldsc</code>, longest step).</li>
+<li>Estimate the genetic covariance matrix, $\Omega$.</li>
+<li>Calculate MTAG-adjusted statistics and output results.</li>
 </ol>
 
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol start="2">
-  <li>Merge the filtered GWAS summary statistics results together, taking the intersection of available SNPs (accounting for lists of SNPs to `include` and/or `exclude`).</li>
-</ol>
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><ol start="3"></p>
-<li>Estimate the residual covariance matrix, $\Sigma_{LD}$, using the intercept of LD Score regression (`ldsc`, longest step). </li>
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><ol start="4"></p>
-<li>Estimate the genetic covariance matrix, $\Omega$.</li>
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><ol start="5"></p>
-<li>Calculate MTAG-adjusted statistics and output results.</li>
 </div>
 </div>
 </div></div></section><section>
@@ -13301,7 +13259,7 @@ rs4240671	8	10767748	A	G	6.35561088027	111111.111111	0.4981	0.0233347188014	0.00
 </li>
 <li>Allele columns are aligned across traits (matched to orientation of first input file)</li>
 </ul>
-<h4 id="Warning:-low-sample-might-lead-to-non-positive-definite-estimates-of-$\Omega$,-$\Sigma$-(truncated-by-program)!">Warning: low sample might lead to non-positive definite estimates of $\Omega$, $\Sigma$ (truncated by program)!<a class="anchor-link" href="#Warning:-low-sample-might-lead-to-non-positive-definite-estimates-of-$\Omega$,-$\Sigma$-(truncated-by-program)!">&#182;</a></h4>
+<h4 id="Warning:-low-sample-might-lead-to-non-positive-definite-estimates-of-$\Omega$,-$\Sigma_{LD}$-(truncated-by-program)!">Warning: low sample might lead to non-positive definite estimates of $\Omega$, $\Sigma_{LD}$ (truncated by program)!<a class="anchor-link" href="#Warning:-low-sample-might-lead-to-non-positive-definite-estimates-of-$\Omega$,-$\Sigma_{LD}$-(truncated-by-program)!">&#182;</a></h4>
 </div>
 </div>
 </div></div></section><section>
@@ -14776,309 +14734,16 @@ MTAG complete. Time elapsed: 25.1162800789s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="The-number-of-grid-points-rises-dramatically-in-the-number-of-grid-points">The number of grid points rises dramatically in the number of grid points<a class="anchor-link" href="#The-number-of-grid-points-rises-dramatically-in-the-number-of-grid-points">&#182;</a></h4>
+<h4 id="The-number-of-grid-points-rises-dramatically-in-the-number-of-traits-and-inverse-size-of-intervals!">The number of grid points rises dramatically in the number of traits and inverse size of intervals!<a class="anchor-link" href="#The-number-of-grid-points-rises-dramatically-in-the-number-of-traits-and-inverse-size-of-intervals!">&#182;</a></h4>
 </div>
 </div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python ../mtag/mtag.py -h
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>usage: mtag.py [-h] [--sumstats [{File1},{File2}...]]
-               [--gencov_path FILE_PATH] [--residcov_path FILE_PATH]
-               [--out DIR/PREFIX] [--make_full_path] [--snp_name SNP_NAME]
-               [--z_name Z_NAME] [--n_name N_NAME] [--eaf_name EAF_NAME]
-               [--chr_name CHR_NAME] [--bpos_name BPOS_NAME]
-               [--a1_name A1_NAME] [--a2_name A2_NAME]
-               [--include SNPLIST1,SNPLIST2,..]
-               [--exclude SNPLIST1,SNPLIST2,..] [--only_chr CHR_A,CHR_B,..]
-               [--homogNs_frac FRAC] [--homogNs_dist D] [--maf_min MAF_MIN]
-               [--n_min N_MIN] [--n_max N_MAX] [--info_min INFO_MIN]
-               [--drop_ambig_snps] [--no_allele_flipping] [--analytic_omega]
-               [--no_overlap] [--perfect_gencov] [--equal_h2] [--fdr]
-               [--grid_file GRID_FILE] [--fit_ss] [--intervals INTERVALS]
-               [--cores CORES] [--p_sig P_SIG] [--n_approx]
-               [--ld_ref_panel FOLDER_PATH] [--time_limit TIME_LIMIT]
-               [--std_betas] [--tol TOL] [--numerical_omega] [--verbose]
-               [--chunksize CHUNKSIZE] [--stream_stdout]
-
-**mtag: Multitrait Analysis of GWAS** This program is the implementation of
-MTAG method described by Turley et. al. Requires the input of a comma-
-separated list of GWAS summary statistics with identical columns. It is
-recommended to pass the column names manually to the program using the options
-below. The implementation of MTAG makes use of the LD Score Regression (ldsc)
-for cleaning the data and estimating residual variance-covariance matrix, so
-the input must also be compatible ./munge_sumstats.py command in the ldsc
-distribution included with mtag. The default estimation method for the genetic
-covariance matrix Omega is GMM (as described in the paper). Note below: any
-list of passed to the options below must be comma-separated without
-whitespace.
-
-optional arguments:
-  -h, --help            show this help message and exit
-
-Input Files:
-  Input files to be used by MTAG. The --sumstats option is required, while
-  using the other two options take priority of their corresponding
-  estimation routines, if used.
-
-  --sumstats [{File1},{File2}...]
-                        Specify the list of summary statistics files to
-                        perform multitrait analysis. Multiple files paths must
-                        be separated by &#34;,&#34;. Please read the documentation to
-                        find the up-to-date set of acceptable file formats. A
-                        general guideline is that any files you pass into MTAG
-                        should also be parsable by ldsc and you should take
-                        the additional step of specifying the names of the
-                        main columns below to avoid reading errors.
-  --gencov_path FILE_PATH
-                        If specified, will read in the genetic covariance
-                        matrix saved in the file path below and skip the
-                        estimation routine. The rows and columns of the matrix
-                        must correspond to the order of the GWAS input files
-                        specified. FIles can either be in whitespace-delimited
-                        .txt or .npy format. Use with caution as the genetic
-                        covariance matrix specified will be weakly nonoptimal.
-  --residcov_path FILE_PATH
-                        If specified, will read in the residual covariance
-                        matrix saved in the file path below and skip the
-                        estimation routine. The rows and columns of the matrix
-                        must correspond to the order of the GWAS input files
-                        specified. FIles can either be in .txt or .npy format.
-                        Use with caution as the genetic covariance matrix
-                        specified will be weakly nonoptimal. File must either
-                        be in whitespace-delimited .txt or .npy
-
-Output formatting:
-  Set the output directory and common name of prefix files.
-
-  --out DIR/PREFIX      Specify the directory and name prefix to output MTAG
-                        results. All mtag results will be prefixed with the
-                        corresponding tag. Default is ./mtag_results
-  --make_full_path      option to make output path specified in -out if it
-                        does not exist.
-
-Column names of input files:
-  These options manually pass the names of the relevant summary statistics
-  columns used by MTAG. It is recommended to pass these names because only
-  narrow searches for these columns are performed in the default cases.
-  Moreover, it is necessary that these input files be readable by ldsc&#39;s
-  munge_sumstats command.
-
-  --snp_name SNP_NAME   Name of the single column that provides the unique
-                        identifier for SNPs in the GWAS summary statistics
-                        across all GWAS results. Default is &#34;snpid&#34;. This the
-                        index that will be used to merge the GWAS summary
-                        statistics. Any SNP lists passed to ---include or
-                        --exclude should also contain the same name.
-  --z_name Z_NAME       The common name of the column of Z scores across all
-                        input files. Default is to search for columns
-                        beginning with the lowercase letter z.
-  --n_name N_NAME       the common name of the column of sample sizes in the
-                        GWAS summary statistics files. Default is to search
-                        for columns beginning with the lowercase letter n.
-  --eaf_name EAF_NAME   The common name of the column of minor allele
-                        frequencies (MAF) in the GWAS input files. The default
-                        is &#34;freq&#34;.
-  --chr_name CHR_NAME   Name of the column containing the chromosome of each
-                        SNP in the GWAS input. Default is &#34;chr&#34;.
-  --bpos_name BPOS_NAME
-                        Name of the column containing the base pair of each
-                        SNP in the GWAS input. Default is &#34;bpos&#34;.
-  --a1_name A1_NAME     Name of the column containing the effect allele of
-                        each SNP in the GWAS input. Default is &#34;a1&#34;.
-  --a2_name A2_NAME     Name of the column containing the non-effect allele of
-                        each SNP in the GWAS input. Default is &#34;a2&#34;.
-
-Filter Options:
-  The input summary statistics files can be filtered using the options
-  below. Note that there is some default filtering according to sample size
-  and allele frequency, following the recommendations we make in the
-  corresponding paper. All of these column-based options allow a list of
-  values to be passed of the same length as the number of traits
-
-  --include SNPLIST1,SNPLIST2,..
-                        Restricts MTAG analysis to the union of snps in the
-                        list of snplists provided. The header line must match
-                        the SNP index that will be used to merge the GWAS
-                        input files.
-  --exclude SNPLIST1,SNPLIST2,.., --excludeSNPs SNPLIST1,SNPLIST2,..
-                        Similar to the --include option, except that the union
-                        of SNPs found in the specified files will be excluded
-                        from MTAG. Both -exclude and -include may be
-                        simultaneously specified, but -exclude will take
-                        precedent (i.e., SNPs found in both the -include and
-                        -exclude SNP lists will be excluded).
-  --only_chr CHR_A,CHR_B,..
-                        Restrict MTAG to SNPs on one of the listed, comma-
-                        separated chromosome. Can be specified simultaneously
-                        with --include and --exclude, but will take precedent
-                        over both. Not generally recommended. Multiple
-                        chromosome numbers should be separated by commas
-                        without whitespace. If this option is specified, the
-                        GWAS summary statistics must also list the chromosome
-                        of each SNPs in a column named \`chr\`.
-  --homogNs_frac FRAC   Restricts to SNPs within FRAC of the mode of sample
-                        sizes for the SNPs as given by (N-Mode)/Mode &lt; FRAC.
-                        This filter is not applied by default.
-  --homogNs_dist D      Restricts to SNPs within DIST (in sample size) of the
-                        mode of sample sizes for the SNPs. This filter is not
-                        applied by default.
-  --maf_min MAF_MIN     set the threshold below SNPs with low minor allele
-                        frequencies will be dropped. Default is 0.01. Set to 0
-                        to skip MAF filtering.
-  --n_min N_MIN         set the minimum threshold for SNP sample size in input
-                        data. Default is 2/3*(90th percentile). Any SNP that
-                        does not pass this threshold for all of the GWAS input
-                        statistics will not be included in MTAG.
-  --n_max N_MAX         set the maximum threshold for SNP sample size in input
-                        data. Not used by default. Any SNP that does not pass
-                        this threshold for any of the GWAS input statistics
-                        will not be included in MTAG.
-  --info_min INFO_MIN   Minimim info score for filtering SNPs for MTAG.
-  --drop_ambig_snps     Drop strand ambiguous SNPs when performing MTAG (they
-                        are already not used to estimate Omega or Sigma.
-  --no_allele_flipping  Prevents flipping the effect sizes of summary
-                        statistics when the effect and non-effect alleles are
-                        reversed (reletive the first summary statistics file.
-
-Special Cases:
-  These options deal with notable special cases of MTAG that yield
-  improvements in runtime. However, they should be used with caution as they
-  will yield non-optimal results if the assumptions implicit in each option
-  are violated.
-
-  --analytic_omega      Option to turn off the numerical estimation of the
-                        genetic VCV matrix in the presence of constant sample
-                        size within each GWAS, for which a closed-form
-                        solution exists. The default is to typically use the
-                        closed form solution as the starting point for the
-                        numerical solution to the maximum-likelihood genetic
-                        VCV, Use with caution! If any input GWAS does not have
-                        constant sample size, then the analytic solution
-                        employed here will not be a maximizer of the
-                        likelihood function.
-  --no_overlap          Imposes the assumption that there is no sample overlap
-                        between the input GWAS summary statistics. MTAG is
-                        performed with the off-diagonal terms on the residual
-                        covariance matrix set to 0.
-  --perfect_gencov      Imposes the assumption that all traits used are
-                        perfectly genetically correlated with each other. The
-                        off-diagonal terms of the genetic covariance matrix
-                        are set to the square root of the product of the
-                        heritabilities
-  --equal_h2            Imposes the assumption that all traits passed to MTAG
-                        have equal heritability. The diagonal terms of the
-                        genetic covariance matrix are set equal to each other.
-                        Can only be used in conjunction with --perfect_gencov
-
-Max FDR calculation:
-  These options are used for the calculation of an upper bound on the false
-  disovery under the model described in Supplementary Note 1.1.4 of Turley
-  et al. (2017). Note that there is one of three ways to define the space of
-  grid points over which the upper bound is searched.
-
-  --fdr                 Perform max FDR calculations
-  --grid_file GRID_FILE
-                        Pre-set list of grid points. Users can define a list
-                        of grid points over which the search is conducted. The
-                        list of grid points should be passed in text file as a
-                        white-space delimited matrix of dimnesions, G x S,
-                        where G is the number of grid points and S = 2^T is
-                        the number of possible causal states for SNPs. States
-                        are ordered according to a tree-like recursive
-                        structure from right to left. For example, for 3
-                        traits, with the triple TFT denoting the state for
-                        which SNPs are causal for State 1, not causal for
-                        state 2, and causal for state 3, then the column
-                        ordering of probabilities should be: FFF FFT FTF FTT
-                        TFF TFT TTF TTT There should be no headers, or row
-                        names in the file. Any rows for which (i) the
-                        probabilities do not sum to 1, the prior of a SNP
-                        being is causal is 0 for any of the traits, and (iii)
-                        the resulting genetic correlation matrix is non
-                        positive definite will excluded in the search.
-  --fit_ss              This estimates the prior probability that a SNP is
-                        null for each trait and then proceeds to restrict the
-                        grid search to the set of probability vectors that sum
-                        to the prior null for each trait. This is useful for
-                        restrict the search space of larger-dimensional
-                        traits.
-  --intervals INTERVALS
-                        Number of intervals that you would like to partition
-                        the [0,1] interval. For example example, with two
-                        traits and --intervals set 10, then maxFDR will
-                        calculated over the set of feasible points in {0.,
-                        0.1, 0.2,..,0.9,1.0}^2.
-  --cores CORES         Number of threads/cores use to compute the FDR grid
-                        points for each trait.
-  --p_sig P_SIG         P-value threshold used for statistical signifiance.
-                        Default is p=5.0e-8 (genome-wide significance).
-  --n_approx            Speed up FDR calculation by replacing the sample size
-                        of a SNP for each trait by the mean across SNPs (for
-                        each trait). Recommended.
-
-Miscellaneous:
-  --ld_ref_panel FOLDER_PATH
-                        Specify folder of the ld reference panel (split by
-                        chromosome) that will be used in the estimation of the
-                        error VCV (sigma). This option is passed to --ref-ld-
-                        chr and --w-ld-chr when running LD score regression.
-                        The default is to use the reference panel of LD scores
-                        computed from 1000 Genomes European subjects
-                        (eur_w_ld_chr) that is included with the distribution
-                        of MTAG
-  --time_limit TIME_LIMIT
-                        Set time limit (hours) on the numerical estimation of
-                        the variance covariance matrix for MTAG, after which
-                        the optimization routine will complete its current
-                        iteration and perform MTAG using the last iteration of
-                        the genetic VCV.
-  --std_betas           Results files will have standardized effect sizes,
-                        i.e., the weights 1/sqrt(2*MAF*(1-MAF)) are not
-                        applied when outputting MTAG results, where MAF is the
-                        minor allele frequency.
-  --tol TOL             Set the relative (x) tolerance when numerically
-                        estimating the genetic variance-covariance matrix. Not
-                        recommended to change unless you are facing strong
-                        runtime constraints for a large number of traits.
-  --numerical_omega     Option to use the MLE estimator of the genetic VCV
-                        matrix, implemented through a numerical routine.
-  --verbose             When used, will include output from running ldsc
-                        scripts as well additional information (such as
-                        optimization routine information.
-  --chunksize CHUNKSIZE
-                        Chunksize for reading in data.
-  --stream_stdout       Will streat mtag processing on console in addition to
-                        writing to log file.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="In-this-case,-we-recommend-that-you---n_approx">In this case, we recommend that you <strong><code>--n_approx</code></strong><a class="anchor-link" href="#In-this-case,-we-recommend-that-you---n_approx">&#182;</a></h4>
+<h4 id="In-this-case,-we-recommend-that-you-use---n_approx">In this case, we recommend that you use <strong><code>--n_approx</code></strong><a class="anchor-link" href="#In-this-case,-we-recommend-that-you-use---n_approx">&#182;</a></h4>
 </div>
 </div>
 </div><div class="fragment">
@@ -15094,7 +14759,7 @@ Miscellaneous:
 
 </div>
 </div>
-</div>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -15103,7 +14768,7 @@ Miscellaneous:
 <h3 id="bash-3.2_maxFDR_approx.bash"><code>bash 3.2_maxFDR_approx.bash</code><a class="anchor-link" href="#bash-3.2_maxFDR_approx.bash">&#182;</a></h3>
 </div>
 </div>
-</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
