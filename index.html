@@ -13735,6 +13735,58 @@ MTAG complete. Time elapsed: 2.0m:58.9194750786s
 </div>
 
 </div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -26 ../output/2_special_opts/2.0_mtag_EA.log
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2017/10/18/06:14:31 PM Beginning estimation of Omega ...
+2017/10/18/06:14:31 PM Using GMM estimator of Omega ..
+2017/10/18/06:14:31 PM Checking for positive definiteness ..
+2017/10/18/06:14:31 PM Completed estimation of Omega ...
+2017/10/18/06:14:31 PM Beginning MTAG calculations...
+2017/10/18/06:14:32 PM  ... Completed MTAG calculations.
+2017/10/18/06:14:32 PM Writing Phenotype 1 to file ...
+2017/10/18/06:14:49 PM Writing Phenotype 2 to file ...
+2017/10/18/06:15:07 PM 
+Summary of MTAG results:
+------------------------
+  Trait                 N (max)  N (mean)  # SNPs used  GWAS mean chi^2  MTAG mean chi^2  GWAS equiv. (max) N
+1  .../EducAtt_ea2.txt  250000   134825    790846       2.011            2.022            252546             
+2  .../EducAtt_ukb.txt   52863    52863    790846       1.204            1.841            217709             
+
+Estimated Omega:
+[[  6.492e-06   4.815e-06]
+ [  4.815e-06   3.970e-06]]
+
+Estimated Sigma:
+[[ 0.92   0.385]
+ [ 0.385  1.028]]
+
+2017/10/18/06:15:07 PM  
+2017/10/18/06:15:07 PM MTAG results saved to file.
+2017/10/18/06:15:07 PM MTAG complete. Time elapsed: 2.0m:58.9194750786s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13950,10 +14002,10 @@ MTAG complete. Time elapsed: 3.0m:1.71074914932s
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -30 ../output/2_special_opts/2.1_mtag_no_overLap_EA.log 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -26 ../output/2_special_opts/2.1_mtag_no_overLap_EA.log 
 </pre></div>
 
 </div>
@@ -13966,36 +14018,32 @@ MTAG complete. Time elapsed: 3.0m:1.71074914932s
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2017/10/18/04:24:48 PM Checking for positive definiteness ..
-2017/10/18/04:24:48 PM Sigma hat:
-[[ 0.92   0.385]
- [ 0.385  1.028]]
-2017/10/18/04:24:48 PM Beginning estimation of Omega ...
-2017/10/18/04:24:48 PM Using GMM estimator of Omega ..
-2017/10/18/04:24:48 PM Checking for positive definiteness ..
-2017/10/18/04:24:48 PM Completed estimation of Omega ...
-2017/10/18/04:24:48 PM Beginning MTAG calculations...
-2017/10/18/04:24:50 PM  ... Completed MTAG calculations.
-2017/10/18/04:24:50 PM Writing Phenotype 1 to file ...
-2017/10/18/04:25:06 PM Writing Phenotype 2 to file ...
-2017/10/18/04:25:22 PM 
+<pre>2017/10/18/06:07:40 PM Checking for positive definiteness ..
+2017/10/18/06:07:40 PM matrix is not positive definite, performing adjustment..
+2017/10/18/06:07:40 PM Completed in 0 iterations
+2017/10/18/06:07:40 PM Completed estimation of Omega ...
+2017/10/18/06:07:40 PM Beginning MTAG calculations...
+2017/10/18/06:07:41 PM  ... Completed MTAG calculations.
+2017/10/18/06:07:41 PM Writing Phenotype 1 to file ...
+2017/10/18/06:07:58 PM Writing Phenotype 2 to file ...
+2017/10/18/06:08:15 PM 
 Summary of MTAG results:
 ------------------------
   Trait                 N (max)  N (mean)  # SNPs used  GWAS mean chi^2  MTAG mean chi^2  GWAS equiv. (max) N
-1  .../EducAtt_ea2.txt  250000   134825    790846       2.011            2.022            252546             
-2  .../EducAtt_ukb.txt   52863    52863    790846       1.204            1.841            217709             
+1  .../EducAtt_ea2.txt  250000   134825    790846       2.011            2.501            371136             
+2  .../EducAtt_ukb.txt   52863    52863    790846       1.204            2.468            380236             
 
 Estimated Omega:
-[[  6.492e-06   4.815e-06]
- [  4.815e-06   3.970e-06]]
+[[  6.492e-06   5.026e-06]
+ [  5.026e-06   3.970e-06]]
 
 Estimated Sigma:
-[[ 0.92   0.385]
- [ 0.385  1.028]]
+[[ 0.92   0.   ]
+ [ 0.     1.028]]
 
-2017/10/18/04:25:22 PM  
-2017/10/18/04:25:22 PM MTAG results saved to file.
-2017/10/18/04:25:22 PM MTAG complete. Time elapsed: 3.0m:0.377210140228s
+2017/10/18/06:08:15 PM  
+2017/10/18/06:08:15 PM MTAG results saved to file.
+2017/10/18/06:08:15 PM MTAG complete. Time elapsed: 3.0m:1.71074914932s
 </pre>
 </div>
 </div>
@@ -14042,7 +14090,7 @@ Estimated Sigma:
 <h4 id="Potential-usefulness:-MTAG-on-GWAS-of-different-measures-of-the-same-trait.">Potential usefulness: MTAG on GWAS of different measures of the same trait.<a class="anchor-link" href="#Potential-usefulness:-MTAG-on-GWAS-of-different-measures-of-the-same-trait.">&#182;</a></h4>
 </div>
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -14227,7 +14275,59 @@ MTAG complete. Time elapsed: 3.0m:0.128737211227s
 </div>
 </div>
 
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -26 ../output/2_special_opts/2.2_mtag_perf_gencov_EA.log
+</pre></div>
+
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2017/10/18/06:19:54 PM Beginning estimation of Omega ...
+2017/10/18/06:19:54 PM Using GMM estimator of Omega ..
+2017/10/18/06:19:54 PM Checking for positive definiteness ..
+2017/10/18/06:19:54 PM Completed estimation of Omega ...
+2017/10/18/06:19:54 PM Beginning MTAG calculations...
+2017/10/18/06:19:56 PM  ... Completed MTAG calculations.
+2017/10/18/06:19:56 PM Writing Phenotype 1 to file ...
+2017/10/18/06:20:12 PM Writing Phenotype 2 to file ...
+2017/10/18/06:20:28 PM 
+Summary of MTAG results:
+------------------------
+  Trait                 N (max)  N (mean)  # SNPs used  GWAS mean chi^2  MTAG mean chi^2  GWAS equiv. (max) N
+1  .../EducAtt_ea2.txt  250000   134825    790846       2.011            2.022            252528             
+2  .../EducAtt_ukb.txt   52863    52863    790846       1.204            2.022            264572             
+
+Estimated Omega:
+[[  6.492e-06   5.077e-06]
+ [  5.077e-06   3.970e-06]]
+
+Estimated Sigma:
+[[ 0.92   0.385]
+ [ 0.385  1.028]]
+
+2017/10/18/06:20:28 PM  
+2017/10/18/06:20:28 PM MTAG results saved to file.
+2017/10/18/06:20:28 PM MTAG complete. Time elapsed: 3.0m:0.128737211227s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -14236,7 +14336,7 @@ MTAG complete. Time elapsed: 3.0m:0.128737211227s
 <h4 id="Compare:">Compare:<a class="anchor-link" href="#Compare:">&#182;</a></h4>
 </div>
 </div>
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -14479,7 +14579,59 @@ MTAG complete. Time elapsed: 3.0m:0.847772121429s
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -26 ../output/2_special_opts/2.3_mtag_perf_gencov_EA.log
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2017/10/18/06:40:53 PM Checking for positive definiteness ..
+2017/10/18/06:40:53 PM Sigma hat:
+[[ 0.92   0.385]
+ [ 0.385  1.028]]
+2017/10/18/06:40:53 PM Beginning estimation of Omega ...
+2017/10/18/06:40:53 PM --perfect_gencov and --equal_h2 option used
+2017/10/18/06:40:53 PM Completed estimation of Omega ...
+2017/10/18/06:40:53 PM Beginning MTAG calculations...
+2017/10/18/06:40:54 PM  ... Completed MTAG calculations.
+2017/10/18/06:40:54 PM Writing Phenotype 1 to file ...
+2017/10/18/06:41:10 PM Writing Phenotype 2 to file ...
+2017/10/18/06:41:27 PM 
+Summary of MTAG results:
+------------------------
+  Trait                 N (max)  N (mean)  # SNPs used  GWAS mean chi^2  MTAG mean chi^2  GWAS equiv. (max) N
+1  .../EducAtt_ea2.txt  250000   134825    790846       2.011            1.998            246761             
+2  .../EducAtt_ukb.txt   52863    52863    790846       1.204            1.998            258530             
+Omega hat not computed because --equal_h2 was used.
+
+Estimated Sigma:
+[[ 0.92   0.385]
+ [ 0.385  1.028]]
+
+2017/10/18/06:41:27 PM  
+2017/10/18/06:41:27 PM MTAG results saved to file.
+2017/10/18/06:41:27 PM MTAG complete. Time elapsed: 3.0m:0.847772121429s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -14729,6 +14881,58 @@ MTAG complete. Time elapsed: 25.1162800789s
 </div>
 
 </div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -26 ../output/3_maxFDR/3.1_mtag_maxFDR_basic_NS.log
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+2017/10/18/06:44:25 PM  
+2017/10/18/06:44:25 PM MTAG results saved to file.
+2017/10/18/06:44:25 PM Beginning maxFDR calculations. Depending on the number of grid points specified, this might take some time...
+2017/10/18/06:44:25 PM T=2
+2017/10/18/06:44:25 PM Number of gridpoints to search: 65
+2017/10/18/06:44:25 PM Performing grid search using 1 cores.
+2017/10/18/06:44:25 PM Grid search: 10.0 percent finished for . Time: 	0.004 min
+2017/10/18/06:44:25 PM Grid search: 20.0 percent finished for . Time: 	0.005 min
+2017/10/18/06:44:25 PM Grid search: 30.0 percent finished for . Time: 	0.007 min
+2017/10/18/06:44:25 PM Grid search: 40.0 percent finished for . Time: 	0.008 min
+2017/10/18/06:44:25 PM Grid search: 50.0 percent finished for . Time: 	0.009 min
+2017/10/18/06:44:25 PM Grid search: 60.0 percent finished for . Time: 	0.010 min
+2017/10/18/06:44:25 PM Grid search: 70.0 percent finished for . Time: 	0.011 min
+2017/10/18/06:44:25 PM Grid search: 80.0 percent finished for . Time: 	0.011 min
+2017/10/18/06:44:25 PM Grid search: 90.0 percent finished for . Time: 	0.012 min
+2017/10/18/06:44:25 PM Grid search: 100.0 percent finished for . Time: 	0.013 min
+2017/10/18/06:44:25 PM Saved calculations of fdr over grid points in ../output/3_maxFDR/3.1_mtag_maxFDR_basic_NS_fdr_mat.txt
+2017/10/18/06:44:25 PM &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+2017/10/18/06:44:25 PM grid point indices for max FDR for each trait: [12  3]
+2017/10/18/06:44:25 PM Maximum FDR
+2017/10/18/06:44:25 PM Max FDR of Trait 1: 0.00109655427181 at probs = [ 0.   0.3  0.   0.7]
+2017/10/18/06:44:25 PM Max FDR of Trait 2: 0.00436959625046 at probs = [ 0.   0.   0.3  0.7]
+2017/10/18/06:44:25 PM &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+2017/10/18/06:44:25 PM Completed FDR calculations.
+2017/10/18/06:44:25 PM MTAG complete. Time elapsed: 25.1162800789s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -14952,6 +15156,58 @@ Max FDR of Trait 2: 0.0271483484174 at probs = [ 0.97  0.    0.01  0.02]
 &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
 Completed FDR calculations.
 MTAG complete. Time elapsed: 3.0m:6.61157798767s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -26 ../output/3_maxFDR/3.2_mtag_maxFDR_approx_NS.log
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+2017/10/18/07:17:30 PM  
+2017/10/18/07:17:30 PM MTAG results saved to file.
+2017/10/18/07:17:30 PM Beginning maxFDR calculations. Depending on the number of grid points specified, this might take some time...
+2017/10/18/07:17:30 PM T=2
+2017/10/18/07:17:54 PM Number of gridpoints to search: 33580
+2017/10/18/07:17:54 PM Performing grid search using 1 cores.
+2017/10/18/07:18:07 PM Grid search: 10.0 percent finished for . Time: 	0.214 min
+2017/10/18/07:18:21 PM Grid search: 20.0 percent finished for . Time: 	0.442 min
+2017/10/18/07:18:35 PM Grid search: 30.0 percent finished for . Time: 	0.674 min
+2017/10/18/07:18:49 PM Grid search: 40.0 percent finished for . Time: 	0.905 min
+2017/10/18/07:19:02 PM Grid search: 50.0 percent finished for . Time: 	1.134 min
+2017/10/18/07:19:16 PM Grid search: 60.0 percent finished for . Time: 	1.357 min
+2017/10/18/07:19:29 PM Grid search: 70.0 percent finished for . Time: 	1.581 min
+2017/10/18/07:19:42 PM Grid search: 80.0 percent finished for . Time: 	1.794 min
+2017/10/18/07:19:57 PM Grid search: 90.0 percent finished for . Time: 	2.048 min
+2017/10/18/07:20:11 PM Grid search: 100.0 percent finished for . Time: 	2.276 min
+2017/10/18/07:20:12 PM Saved calculations of fdr over grid points in ../output/3_maxFDR/3.2_mtag_maxFDR_approx_NS_fdr_mat.txt
+2017/10/18/07:20:12 PM &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+2017/10/18/07:20:12 PM grid point indices for max FDR for each trait: [  829 33576]
+2017/10/18/07:20:12 PM Maximum FDR
+2017/10/18/07:20:12 PM Max FDR of Trait 1: 0.00110246986219 at probs = [ 0.    0.28  0.    0.72]
+2017/10/18/07:20:12 PM Max FDR of Trait 2: 0.0271483484174 at probs = [ 0.97  0.    0.01  0.02]
+2017/10/18/07:20:12 PM &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+2017/10/18/07:20:12 PM Completed FDR calculations.
+2017/10/18/07:20:12 PM MTAG complete. Time elapsed: 3.0m:6.61157798767s
 </pre>
 </div>
 </div>
