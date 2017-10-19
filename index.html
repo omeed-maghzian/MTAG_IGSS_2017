@@ -11830,7 +11830,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="MTAG">MTAG<a class="anchor-link" href="#MTAG">&#182;</a></h1><h2 id="A-PythonPPP-Command-Line-Tool">A PythonPPP Command Line Tool<a class="anchor-link" href="#A-PythonPPP-Command-Line-Tool">&#182;</a></h2><h3 id="Omeed-Maghzian">Omeed Maghzian<a class="anchor-link" href="#Omeed-Maghzian">&#182;</a></h3>
+<h1 id="MTAG">MTAG<a class="anchor-link" href="#MTAG">&#182;</a></h1><h2 id="Python-Command-Line-Tool">Python Command Line Tool<a class="anchor-link" href="#Python-Command-Line-Tool">&#182;</a></h2><h3 id="Omeed-Maghzian">Omeed Maghzian<a class="anchor-link" href="#Omeed-Maghzian">&#182;</a></h3><h3 id="Patrick-Turley">Patrick Turley<a class="anchor-link" href="#Patrick-Turley">&#182;</a></h3>
 </div>
 </div>
 </div></section></section><section><section>
@@ -11927,9 +11927,12 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Install-Python">Install Python<a class="anchor-link" href="#Install-Python">&#182;</a></h4><ul>
-<li>To begin, you need a distribution of Python 2.7 (such as from <a href="https://www.anaconda.com/download/#macos">Anaconda</a>) with the following packages: <code>numpy</code>, <code>scipy</code>, <code>pandas</code>, <code>argparse</code>, <code>bitarray</code>, <code>joblib</code>.</li>
+<li>To begin, you need a distribution of Python 2.7 (such as from <a href="https://www.anaconda.com/download/#macos">Anaconda</a>) with the following packages: <code>numpy</code>, <code>scipy</code>, <code>pandas</code>, <code>argparse</code>, <code>bitarray</code>, <code>joblib</code>.<ul>
+<li>will also work with Python 3 soon</li>
+</ul>
+</li>
 <li>You should be able to call Python by typing in <code>python</code> (or a similar command) in the command line.</li>
-<li>Explained in the README found in the Github repo</li>
+<li>Explained in the <code>README</code> found in the Github repository.</li>
 </ul>
 
 </div>
@@ -11957,18 +11960,38 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Updating-MTAG">Updating <code>MTAG</code><a class="anchor-link" href="#Updating-MTAG">&#182;</a></h3><ul>
 <li>navigate <em>into</em> the <code>mtag</code> folder</li>
-<li><p>use <code>git pull</code></p>
-</li>
-<li><p><strong>Up-to-date</strong>:
-<img src="figs/command_1.2cropped.png"></p>
-</li>
+<li>type <code>git pull</code></li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Up-to-date</strong>:
+<img src="figs/command_1.2cropped.png"></li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><strong>Otherwise, will update</strong>:
 <img src="figs/gitpull2.png"></li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12056,7 +12079,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Running-Bash/Shell-scripts">Running Bash/Shell scripts<a class="anchor-link" href="#Running-Bash/Shell-scripts">&#182;</a></h3><ul>
 <li>You can write a sequence of commands (and comments) in a <code>.bash</code> or <code>.sh</code> script</li>
-<li><code>bash [file.bash]</code> executes these commands (use <code>shell</code> for <code>.sh</code>)</li>
+<li><code>bash [file.bash]</code> executes these commands</li>
 </ul>
 
 </div>
@@ -12080,9 +12103,9 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Helpful-shortcuts">Helpful shortcuts<a class="anchor-link" href="#Helpful-shortcuts">&#182;</a></h3><ul>
-<li>Press the "Up" key to automatically re-type past commands</li>
-<li>Use "CTRL+C" to kill processes in the foreground</li>
-<li>The <code>tab</code> key is your friend!</li>
+<li>Press the "<code>UP</code>" key to automatically re-type past commands</li>
+<li>Use "<code>CTRL+C</code>" to kill processes in the foreground</li>
+<li>Auto-completion: the <code>TAB</code> key is your friend!</li>
 <li>"<code>.</code>" refers to the current directory</li>
 <li>"<code>..</code>" refers to the parent of the current directory</li>
 </ul>
@@ -12109,7 +12132,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="For-convenience,-most-commands-that-are-shown-can-be-run-by-calling-bash-on-the-parenthetical-script-name.">For convenience, most commands that are shown can be run by calling <code>bash</code> on the parenthetical script name.<a class="anchor-link" href="#For-convenience,-most-commands-that-are-shown-can-be-run-by-calling-bash-on-the-parenthetical-script-name.">&#182;</a></h4><h4 id="The-slide-will-display-the-contents-inside-each-script">The slide will display the contents inside each script<a class="anchor-link" href="#The-slide-will-display-the-contents-inside-each-script">&#182;</a></h4>
+<h4 id="For-convenience,-most-commands-that-are-shown-can-be-run-by-calling-bash-on-the-parenthetical-script-name.">For convenience, most commands that are shown can be run by calling <code>bash</code> on the parenthetical script name.<a class="anchor-link" href="#For-convenience,-most-commands-that-are-shown-can-be-run-by-calling-bash-on-the-parenthetical-script-name.">&#182;</a></h4><h4 id="The-slide-will-display-the-contents-inside-each-script.">The slide will display the contents inside each script.<a class="anchor-link" href="#The-slide-will-display-the-contents-inside-each-script.">&#182;</a></h4>
 </div>
 </div>
 </div></section><section>
@@ -12118,7 +12141,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Viewing-MTAG-options">Viewing MTAG options<a class="anchor-link" href="#Viewing-MTAG-options">&#182;</a></h4><h4 id="Check-that-you-are-in-the-code-directory-by-typing-pwd">Check that you are in the <code>code</code> directory by typing <code>pwd</code><a class="anchor-link" href="#Check-that-you-are-in-the-code-directory-by-typing-pwd">&#182;</a></h4><h4 id="Then,-Type:">Then, Type:<a class="anchor-link" href="#Then,-Type:">&#182;</a></h4>
+<h4 id="Viewing-MTAG-options">Viewing MTAG options<a class="anchor-link" href="#Viewing-MTAG-options">&#182;</a></h4><h4 id="Check-that-you-are-in-the-code-directory-by-typing-pwd">Check that you are in the <code>code</code> directory by typing <code>pwd</code><a class="anchor-link" href="#Check-that-you-are-in-the-code-directory-by-typing-pwd">&#182;</a></h4><h4 id="Then,-type:">Then, type:<a class="anchor-link" href="#Then,-type:">&#182;</a></h4>
 <pre><code>bash 1.1_access_help.bash</code></pre>
 
 </div>
@@ -12483,7 +12506,17 @@ Miscellaneous:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="The-workshop-files-provided-contain-the-&quot;default&quot;-column-names-for-MTAG">The workshop files provided contain the "default" column names for MTAG<a class="anchor-link" href="#The-workshop-files-provided-contain-the-&quot;default&quot;-column-names-for-MTAG">&#182;</a></h3>
+<p><em>The workshop files provided contain the "default" column names for MTAG</em></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="bash-1.2_view_sumstats.bash"><code>bash 1.2_view_sumstats.bash</code><a class="anchor-link" href="#bash-1.2_view_sumstats.bash">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
@@ -12523,7 +12556,17 @@ rs1533059	8	8684953	A	G	0.4478	-7.07412856424	1.504e-12	62500.0
 </div>
 </div>
 
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> All of the columns shown above are necessary for MTAG to run </strong></p>
+
+</div>
+</div>
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
@@ -12559,16 +12602,38 @@ rs851997	6	151985550	A	G	0.3787	0.0	1.0	62500.0
 </div>
 </div>
 
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong> All of the columns shown above are necessary for MTAG to run </strong></p>
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sed -n <span class="s1">&#39;103995,104000p&#39;</span> ../data/1_OA2016_hm3samp_NEUR.txt 
+</pre></div>
 
 </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>rs322382	5	172198952	T	C	0.3041	-0.648595291061	0.5166	62500.0
+rs3795732	1	156564640	A	G	0.7108	-0.648595291061	0.5166	62500.0
+rs4111166	9	26524416	T	C	0.4739	0.648595291061	0.5166	111111.111111
+rs4491677	2	128789204	A	G	0.2276	-0.648595291061	0.5166	62500.0
+rs622272	17	14400878	T	G	0.5	-0.648595291061	0.5166	111111.111111
+rs842938	2	201404694	T	C	0.459	0.648595291061	0.5166	111111.111111
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12586,7 +12651,7 @@ rs851997	6	151985550	A	G	0.3787	0.0	1.0	62500.0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li>Read in each summary statistics file in the list and "munges" (filters/clean) them, in particular:<ul>
+<li>Read in each summary statistics file in the list and "munges" (filters/clean) them, in particular MTAG:<ul>
 <li>Only keeps SNPs with Minor Allele Frequency (MAF) $ \geq 0.01$</li>
 <li>Only keeps SNPs with sample size $N \geq \frac{2}{3} F^{-1}_N(90)$ (greater than two-thirds of the 90th percentile)</li>
 </ul>
@@ -12613,7 +12678,7 @@ rs851997	6	151985550	A	G	0.3787	0.0	1.0	62500.0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><ol start="3"></p>
-<li>Estimate the residual covariance matrix, $\Sigma$, using the intercept of LD Score regression (`ldsc`, longest step). </li>
+<li>Estimate the residual covariance matrix, $\Sigma_{LD}$, using the intercept of LD Score regression (`ldsc`, longest step). </li>
 </div>
 </div>
 </div></div><div class="fragment">
@@ -12633,7 +12698,7 @@ rs851997	6	151985550	A	G	0.3787	0.0	1.0	62500.0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><ol start="5"></p>
-<li>Calculate MTAG-adjusted statistics and output results</li>
+<li>Calculate MTAG-adjusted statistics and output results.</li>
 </div>
 </div>
 </div></div></section><section>
@@ -12659,7 +12724,7 @@ rs851997	6	151985550	A	G	0.3787	0.0	1.0	62500.0
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1.3_mtag_default.bash  </span>
@@ -12683,7 +12748,7 @@ rs851997	6	151985550	A	G	0.3787	0.0	1.0	62500.0
 &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
 &lt;&gt;
 &lt;&gt; MTAG: Multitrait Analysis of GWAS 
-&lt;&gt; Version: 1.0.2
+&lt;&gt; Version: 1.0.3
 &lt;&gt; (C) 2017 Omeed Maghzian, Raymond Walters, and Patrick Turley
 &lt;&gt; Harvard University Department of Economics / Broad Institute of MIT and Harvard
 &lt;&gt; GNU General Public License v3
@@ -12733,8 +12798,8 @@ Lambda GC = 1.366
 Max chi^2 = 59.523
 20 Genome-wide significant SNPs (some may have been removed by filtering).
 
-Conversion finished at Wed Oct 18 15:46:57 2017
-Total time elapsed: 0.6s
+Conversion finished at Thu Oct 19 02:03:44 2017
+Total time elapsed: 0.7s
 &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
 Munging of Trait 1 complete. SNPs remaining:	 22778
 &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
@@ -12772,8 +12837,8 @@ Lambda GC = 1.188
 Max chi^2 = 29.353
 1 Genome-wide significant SNPs (some may have been removed by filtering).
 
-Conversion finished at Wed Oct 18 15:46:58 2017
-Total time elapsed: 0.8s
+Conversion finished at Thu Oct 19 02:03:46 2017
+Total time elapsed: 1.21s
 &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
 Munging of Trait 2 complete. SNPs remaining:	 65374
 &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
@@ -12811,7 +12876,7 @@ Estimated Sigma:
 
  
 MTAG results saved to file.
-MTAG complete. Time elapsed: 26.3379778862s
+MTAG complete. Time elapsed: 27.0710499287s
 </pre>
 </div>
 </div>
@@ -12834,7 +12899,7 @@ MTAG complete. Time elapsed: 26.3379778862s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Reading-the-log-file-(masthead)">Reading the log file (masthead)<a class="anchor-link" href="#Reading-the-log-file-(masthead)">&#182;</a></h3>
+<h3 id="Reading-the-log-file:-masthead">Reading the log file: masthead<a class="anchor-link" href="#Reading-the-log-file:-masthead">&#182;</a></h3>
 <pre><code>&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
 &lt;&gt;
 &lt;&gt; MTAG: Multitrait Analysis of GWAS 
@@ -12863,7 +12928,7 @@ Beginning MTAG analysis...</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Reading-the-log-file-(munging)">Reading the log file (munging)<a class="anchor-link" href="#Reading-the-log-file-(munging)">&#182;</a></h3>
+<h3 id="Reading-the-log-file:-munging">Reading the log file: munging<a class="anchor-link" href="#Reading-the-log-file:-munging">&#182;</a></h3>
 <pre><code>&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
 Munging Trait 1  &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;
 &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
@@ -12887,7 +12952,7 @@ z:    Directional summary statistic as specified by --signed-sumstats.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Reading-the-log-file-(estimation)">Reading the log file (estimation)<a class="anchor-link" href="#Reading-the-log-file-(estimation)">&#182;</a></h3>
+<h3 id="Reading-the-log-file:-estimation">Reading the log file: estimation<a class="anchor-link" href="#Reading-the-log-file:-estimation">&#182;</a></h3>
 <pre><code>...
 ... Merge of GWAS summary statistics complete. Number of SNPs:     20321
 Using 20321 SNPs to estimate Omega (0 SNPs excluded due to strand ambiguity)
@@ -12932,7 +12997,7 @@ Estimated Sigma:
 
 </div>
 </div>
-</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12940,11 +13005,11 @@ Estimated Sigma:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="(genetic-correlation-estimated-by-MTAG)">(genetic correlation estimated by MTAG)<a class="anchor-link" href="#(genetic-correlation-estimated-by-MTAG)">&#182;</a></h4>
 <pre><code>[[ 1.       , -0.7363645],
-[-0.7363645,  1.       ]]</code></pre>
+ [-0.7363645,  1.       ]]</code></pre>
 
 </div>
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13143,7 +13208,7 @@ rs4240671	8	10767748	A	G	6.35561088027	111111.111111	0.4981	0.0233347188014	0.00
 
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13223,7 +13288,7 @@ rs4240671	8	10767748	A	G	6.35561088027	111111.111111	0.4981	0.0233347188014	0.00
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Comments:">Comments:<a class="anchor-link" href="#Comments:">&#182;</a></h4><ul>
+<h3 id="Some-comments:">Some comments:<a class="anchor-link" href="#Some-comments:">&#182;</a></h3><ul>
 <li>Only contains SNPs the survive all filters<ul>
 <li>Ordered the same across traits</li>
 </ul>
@@ -13306,7 +13371,7 @@ rs4240671	8	10767748	A	G	6.35561088027	111111.111111	0.4981	0.0233347188014	0.00
 <h3 id="Specifying-matrix-paths">Specifying matrix paths<a class="anchor-link" href="#Specifying-matrix-paths">&#182;</a></h3><ul>
 <li>Use:<ul>
 <li><code>--gencov_path</code> to specify $\Omega$</li>
-<li><code>--residcov_path</code> to specify $\Sigma$</li>
+<li><code>--residcov_path</code> to specify $\Sigma_{LD}$</li>
 </ul>
 </li>
 <li>Files must be in the same format as produced by MTAG (contain only the matrix).</li>
@@ -13314,16 +13379,16 @@ rs4240671	8	10767748	A	G	6.35561088027	111111.111111	0.4981	0.0233347188014	0.00
 
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Try-it-out-...">Try it out ...<a class="anchor-link" href="#Try-it-out-...">&#182;</a></h3>
+<h3 id="Let's-try-it-out-...">Let's try it out ...<a class="anchor-link" href="#Let's-try-it-out-...">&#182;</a></h3>
 </div>
 </div>
-</div><div class="fragment">
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13493,16 +13558,16 @@ MTAG complete. Time elapsed: 3.93074512482s
 </div>
 </div>
 
-</div></div></section><section>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comments-on-filtering">Comments on filtering<a class="anchor-link" href="#Comments-on-filtering">&#182;</a></h3><h3 id="XXX-Filtering-in-general">XXX Filtering in general<a class="anchor-link" href="#XXX-Filtering-in-general">&#182;</a></h3><h4 id="XXX-Sample-size-window-filtering">XXX Sample size window filtering<a class="anchor-link" href="#XXX-Sample-size-window-filtering">&#182;</a></h4>
+<h3 id="Filtering:-maintain-homogenous-$\Omega$-assumption">Filtering: maintain homogenous $\Omega$ assumption<a class="anchor-link" href="#Filtering:-maintain-homogenous-$\Omega$-assumption">&#182;</a></h3>
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13534,7 +13599,7 @@ MTAG complete. Time elapsed: 3.93074512482s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Without-special-options:">Without special options:<a class="anchor-link" href="#Without-special-options:">&#182;</a></h4>
+<h3 id="Without-special-options:">Without special options:<a class="anchor-link" href="#Without-special-options:">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
@@ -13725,10 +13790,10 @@ MTAG complete. Time elapsed: 2.0m:58.9194750786s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Action:-Sets-the-diagonal-elements-of-$\Sigma$-to-0.">Action: Sets the diagonal elements of $\Sigma$ to 0.<a class="anchor-link" href="#Action:-Sets-the-diagonal-elements-of-$\Sigma$-to-0.">&#182;</a></h4>
+<h4 id="Action:-Sets-the-diagonal-elements-of-$\Sigma_{LD}$-to-0.">Action: Sets the diagonal elements of $\Sigma_{LD}$ to 0.<a class="anchor-link" href="#Action:-Sets-the-diagonal-elements-of-$\Sigma_{LD}$-to-0.">&#182;</a></h4>
 </div>
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -13976,7 +14041,7 @@ Estimated Sigma:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="--perfect_gencov:-Different-measure-of-the-same-trait"><code>--perfect_gencov</code>: Different measure of the same trait<a class="anchor-link" href="#--perfect_gencov:-Different-measure-of-the-same-trait">&#182;</a></h3>
+<h3 id="--perfect_gencov:-Different-measures-of-the-same-trait"><code>--perfect_gencov</code>: Different measures of the same trait<a class="anchor-link" href="#--perfect_gencov:-Different-measures-of-the-same-trait">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
@@ -14455,16 +14520,6 @@ MTAG complete. Time elapsed: 3.0m:0.847772121429s
 <h2 id="3.-maxFDR-calculations">3. maxFDR calculations<a class="anchor-link" href="#3.-maxFDR-calculations">&#182;</a></h2>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>XXX picture of simplex grid points (computational problems)</p>
-
-</div>
-</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -14489,14 +14544,14 @@ MTAG complete. Time elapsed: 3.0m:0.847772121429s
 <li>Adjusting coarseness of grid (<code>--intervals</code>)</li>
 <li>Parallelization (<code>--cores</code>)</li>
 <li>Sample size approximation (<code>--n_approx</code>)</li>
-<li>Fit Restriction grid points to that are equal the prior probability of a null SNP for each trait (in development).</li>
+<li>Restrict grid points to that those that maintain the prior probability of a null SNP for each trait (in development).</li>
 </ul>
 </li>
 </ul>
 
 </div>
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -14517,7 +14572,7 @@ MTAG complete. Time elapsed: 3.0m:0.847772121429s
 <h3 id="3.1_max_FDR_basics.bash"><code>3.1_max_FDR_basics.bash</code><a class="anchor-link" href="#3.1_max_FDR_basics.bash">&#182;</a></h3>
 </div>
 </div>
-</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
@@ -14705,16 +14760,16 @@ MTAG complete. Time elapsed: 25.1162800789s
 </div>
 </div>
 
-</div>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="The-number-of-grid-points-to-compute-is-multiplicative-in-the-coarseness-and-exponential-in-the-number-of-traits!">The number of grid points to compute is multiplicative in the coarseness and exponential in the number of traits!<a class="anchor-link" href="#The-number-of-grid-points-to-compute-is-multiplicative-in-the-coarseness-and-exponential-in-the-number-of-traits!">&#182;</a></h4>
+<h4 id="The-number-of-grid-points-rises-dramatically-in-the-number-of-grid-points">The number of grid points rises dramatically in the number of grid points<a class="anchor-link" href="#The-number-of-grid-points-rises-dramatically-in-the-number-of-grid-points">&#182;</a></h4>
 </div>
 </div>
-</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
@@ -15007,7 +15062,7 @@ Miscellaneous:
 </div>
 </div>
 
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -15229,208 +15284,6 @@ MTAG complete. Time elapsed: 3.0m:6.61157798767s
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python ../mtag/mtag.py  <span class="err">\</span>
-    <span class="o">--</span><span class="n">sumstats</span> <span class="o">../</span><span class="n">data</span><span class="o">/</span><span class="mi">1</span><span class="n">_OA2016_hm3samp_NEUR</span><span class="o">.</span><span class="n">txt</span><span class="p">,</span><span class="o">../</span><span class="n">data</span><span class="o">/</span><span class="mi">1</span><span class="n">_OA2016_hm3samp_SWB</span><span class="o">.</span><span class="n">txt</span>  \
-    <span class="o">--</span><span class="n">out</span> <span class="o">../</span><span class="n">output</span><span class="o">/</span><span class="mi">3</span><span class="n">_maxFDR</span><span class="o">/</span><span class="mf">3.2</span><span class="n">_mtag_maxFDR_noapprox_NS</span> \
-    <span class="o">--</span><span class="n">stream_stdout</span> \
-    <span class="o">--</span><span class="n">fdr</span> \
-    <span class="o">--</span><span class="n">intervals</span> <span class="mi">100</span> \
-    <span class="o">--</span><span class="n">stream_stdout</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-&lt;&gt;
-&lt;&gt; MTAG: Multitrait Analysis of GWAS 
-&lt;&gt; Version: 1.0.3
-&lt;&gt; (C) 2017 Omeed Maghzian, Raymond Walters, and Patrick Turley
-&lt;&gt; Harvard University Department of Economics / Broad Institute of MIT and Harvard
-&lt;&gt; GNU General Public License v3
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-&lt;&gt; Note:  It is recommended to run your own QC on the input before using this program. 
-&lt;&gt; Software-related correspondence: maghzian@nber.org 
-&lt;&gt; All other correspondence: paturley@broadinstitute.org 
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-
-
-Calling ./mtag.py \
---intervals 100 \
---stream-stdout  \
---sumstats ../data/1_OA2016_hm3samp_NEUR.txt,../data/1_OA2016_hm3samp_SWB.txt \
---fdr  \
---out ../output/3_maxFDR/3.2_mtag_maxFDR_noapprox_NS 
-
-Beginning MTAG analysis...
-Read in Trait 1 summary statistics (185458 SNPs) from ../data/1_OA2016_hm3samp_NEUR.txt ...
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-Munging Trait 1  &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-Interpreting column names as follows:
-snpid:	Variant ID (e.g., rs number)
-n:	Sample size
-a1:	Allele 1, interpreted as ref allele for signed sumstat.
-pval:	p-Value
-a2:	Allele 2, interpreted as non-ref allele for signed sumstat.
-freq:	Allele frequency
-z:	Directional summary statistic as specified by --signed-sumstats.
-
-Reading sumstats from provided DataFrame into memory 10000000 SNPs at a time.
-. done
-Read 185458 SNPs from --sumstats file.
-Removed 0 SNPs with missing values.
-Removed 0 SNPs with INFO &lt;= None.
-Removed 0 SNPs with MAF &lt;= 0.01.
-Removed 0 SNPs with out-of-bounds p-values.
-Removed 0 variants that were not SNPs. Note: strand ambiguous SNPs were not dropped.
-185458 SNPs remain.
-Removed 0 SNPs with duplicated rs numbers (185458 SNPs remain).
-Removed 162680 SNPs with N &lt; 74074.074074 (22778 SNPs remain).
-Median value of SIGNED_SUMSTATS was 0.0, which seems sensible.
-Dropping snps with null values
-
-Metadata:
-Mean chi^2 = 1.467
-Lambda GC = 1.366
-Max chi^2 = 59.523
-20 Genome-wide significant SNPs (some may have been removed by filtering).
-
-Conversion finished at Wed Oct 18 20:37:41 2017
-Total time elapsed: 0.62s
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-Munging of Trait 1 complete. SNPs remaining:	 22778
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-
-Read in Trait 2 summary statistics (167911 SNPs) from ../data/1_OA2016_hm3samp_SWB.txt ...
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-Munging Trait 2  &lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-Interpreting column names as follows:
-snpid:	Variant ID (e.g., rs number)
-n:	Sample size
-a1:	Allele 1, interpreted as ref allele for signed sumstat.
-pval:	p-Value
-a2:	Allele 2, interpreted as non-ref allele for signed sumstat.
-freq:	Allele frequency
-z:	Directional summary statistic as specified by --signed-sumstats.
-
-Reading sumstats from provided DataFrame into memory 10000000 SNPs at a time.
-. done
-Read 167911 SNPs from --sumstats file.
-Removed 0 SNPs with missing values.
-Removed 0 SNPs with INFO &lt;= None.
-Removed 0 SNPs with MAF &lt;= 0.01.
-Removed 0 SNPs with out-of-bounds p-values.
-Removed 0 variants that were not SNPs. Note: strand ambiguous SNPs were not dropped.
-167911 SNPs remain.
-Removed 0 SNPs with duplicated rs numbers (167911 SNPs remain).
-Removed 102537 SNPs with N &lt; 74074.074074 (65374 SNPs remain).
-Median value of SIGNED_SUMSTATS was 0.0, which seems sensible.
-Dropping snps with null values
-
-Metadata:
-Mean chi^2 = 1.208
-Lambda GC = 1.188
-Max chi^2 = 29.353
-1 Genome-wide significant SNPs (some may have been removed by filtering).
-
-Conversion finished at Wed Oct 18 20:37:43 2017
-Total time elapsed: 0.75s
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-Munging of Trait 2 complete. SNPs remaining:	 65374
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-
-Trait 2 summary statistics: 	 20321 SNPs remaining merging with previous traits.
-... Merge of GWAS summary statistics complete. Number of SNPs:	 20321
-Using 20321 SNPs to estimate Omega (0 SNPs excluded due to strand ambiguity)
-Estimating sigma..
-Checking for positive definiteness ..
-Sigma hat:
-[[ 1.043 -0.129]
- [-0.129  0.966]]
-Beginning estimation of Omega ...
-Using GMM estimator of Omega ..
-Checking for positive definiteness ..
-Completed estimation of Omega ...
-Beginning MTAG calculations...
- ... Completed MTAG calculations.
-Writing Phenotype 1 to file ...
-Writing Phenotype 2 to file ...
-
-Summary of MTAG results:
-------------------------
-  Trait                 N (max)  N (mean)  # SNPs used  GWAS mean chi^2  MTAG mean chi^2  GWAS equiv. (max) N
-1  ...hm3samp_NEUR.txt  111111   111111    20321        1.407            1.488            133309             
-2  ..._hm3samp_SWB.txt  111111   111111    20321        1.269            1.408            168490             
-
-Estimated Omega:
-[[  3.817e-06  -2.199e-06]
- [ -2.199e-06   2.336e-06]]
-
-Estimated Sigma:
-[[ 1.043 -0.129]
- [-0.129  0.966]]
-
- 
-MTAG results saved to file.
-Beginning maxFDR calculations. Depending on the number of grid points specified, this might take some time...
-T=2
-Number of gridpoints to search: 33580
-Performing grid search using 1 cores.
-Grid search: 10.0 percent finished for . Time: 	0.224 min
-Grid search: 20.0 percent finished for . Time: 	0.451 min
-Grid search: 30.0 percent finished for . Time: 	0.672 min
-Grid search: 40.0 percent finished for . Time: 	0.890 min
-Grid search: 50.0 percent finished for . Time: 	1.103 min
-Grid search: 60.0 percent finished for . Time: 	1.315 min
-Grid search: 70.0 percent finished for . Time: 	1.532 min
-Grid search: 80.0 percent finished for . Time: 	1.778 min
-Grid search: 90.0 percent finished for . Time: 	2.025 min
-Grid search: 100.0 percent finished for . Time: 	2.268 min
-Saved calculations of fdr over grid points in ../output/3_maxFDR/3.2_mtag_maxFDR_noapprox_NS_fdr_mat.txt
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-grid point indices for max FDR for each trait: [  829 33576]
-Maximum FDR
-Max FDR of Trait 1: 0.00110246986219 at probs = [ 0.    0.28  0.    0.72]
-Max FDR of Trait 2: 0.0271483484174 at probs = [ 0.97  0.    0.01  0.02]
-&lt;&gt;&lt;&gt;&lt;&lt;&gt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-Completed FDR calculations.
-MTAG complete. Time elapsed: 3.0m:11.2434370518s
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail -30 ../output/3_maxFDR/3.2_mtag_maxFDR_approx_NS.log
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -15446,7 +15299,7 @@ MTAG complete. Time elapsed: 3.0m:11.2434370518s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Let-MTAG-run-in-the-background,-work-with-results-while-maxFDR-is-still-running.">Let MTAG run in the background, work with results while maxFDR is still running.<a class="anchor-link" href="#Let-MTAG-run-in-the-background,-work-with-results-while-maxFDR-is-still-running.">&#182;</a></h4>
+<h4 id="Run-MTAG-in-the-background,-work-with-results-while-maxFDR-is-still-running.">Run MTAG in the background, work with results while maxFDR is still running.<a class="anchor-link" href="#Run-MTAG-in-the-background,-work-with-results-while-maxFDR-is-still-running.">&#182;</a></h4>
 </div>
 </div>
 </div></div></section></section><section><section>
@@ -15458,24 +15311,77 @@ MTAG complete. Time elapsed: 3.0m:11.2434370518s
 <h2 id="Questions?">Questions?<a class="anchor-link" href="#Questions?">&#182;</a></h2>
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ways to get help:</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Check out the tutorials avaialble on the Github wiki</li>
-<li>Refer back to the original MTAG paper (Turley et al. 2017)</li>
-<li>If you find any bugs/errors, open up an issue on Github</li>
-<li>For troubleshooting, post a message on the Google Group</li>
-<li>And, finally: Email: <a href="mailto:maghzian@nber.org">maghzian@nber.org</a></li>
+<li>Check out the tutorials available on the Github wiki</li>
 </ul>
 
 </div>
 </div>
-</div></section></section>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Refer back to the original MTAG paper (Turley et al. 2017)</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>For troubleshooting, post a message on the <a href="https://groups.google.com/forum/#!forum/mtag_users">Google Group</a></li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>If you find any bugs/errors, open up an issue on Github</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Finally, email: <a href="mailto:maghzian@nber.org">maghzian@nber.org</a></li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section>
 </div>
 </div>
 
