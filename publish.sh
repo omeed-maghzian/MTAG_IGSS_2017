@@ -1,7 +1,7 @@
 #!/bin/bash
 
 jupyter-nbconvert --to slides slides_OM.ipynb --reveal-prefix=reveal.js
-mv slides.slides.html  index.html
+mv slides_OM.slides.html  index.html
 mkdir -p /tmp/workspace
 cp -r * /tmp/workspace/
 git add -A .
